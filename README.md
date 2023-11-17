@@ -34,7 +34,7 @@ To deal with this amount of data, I needed to use a cloud computing service. I u
 
 I cleaned and combined the 4 data sources, eliminating duplicates and null values. I then used standard NLP techniques like tokenization, stopword removal, and case standardizing on the tweets. I applied a TF-IDF vectorizer and tested various combinations of hyperparameters with this, settling on using unigrams and bigrams, and a max of 75k features with the final model.
 
-After iterating through several instances of Multinomial Naive Bayes, Logistic Regression, and Random Forest algorithms, I settled on Logistic Regression with only 2 classes as the most useful model. With a testing accuracy of over 75%, which held up when applied to the hidden validation data, I felt comfortable taking it into deployment phase. Below is the confusion matrix for this final model.
+After iterating through several instances of Multinomial Naive Bayes, Logistic Regression, and Random Forest algorithms, I settled on Logistic Regression with only 2 classes as the most useful model. With a testing accuracy of over 75%, which held up when applied to the hidden validation data, I felt comfortable taking it into deployment phase. Below is the confusion matrix for this final model's performance on the validation data. Class 0 is negative sentiment, and 2 is positive. Our recall scores were 68.6% for negative and 81.3% for positive.
 
 ![LogReg_CM](./images/Final_LogReg_CM.png)
 
