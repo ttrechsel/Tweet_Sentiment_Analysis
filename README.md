@@ -1,4 +1,4 @@
-![](./images/docpad.jpg)
+![BadTweet](./images/Kendall_Roy.jpg)
 
 # Tweet Sentiment Analysis
 
@@ -14,7 +14,7 @@ I created a rudimentary sentiment classifier tool that analyzes recent tweets ab
 
 For stakeholders with a brand to maintain and protect, awareness of public perception is critical. Having a timely indication of negative reactions can help these stakeholders to anticipate PR crises, and thus allow them to respond quickly and appropriately. Social media and machine learning together offer a revolutionary way to "take the temperature" of the public towards a given brand without opting for costly and protracted surveys or focus groups.
 
-![img](./images/grey.jpeg)
+![PepsiOopsie](./images/Kylie_Jenner.jpg)
 
 ## Data
 
@@ -36,12 +36,14 @@ I cleaned and combined the 4 data sources, eliminating duplicates and null value
 
 After iterating through several instances of Multinomial Naive Bayes, Logistic Regression, and Random Forest algorithms, I settled on Logistic Regression with only 2 classes as the most useful model. With a testing accuracy of over 75%, which held up when applied to the hidden validation data, I felt comfortable taking it into deployment phase. Below is the confusion matrix for this final model.
 
-![conmatrx](https://github.com/heefjones/natural_language_prodigies/assets/141749731/f9468a4c-e789-4dee-90fa-137d611086f8)
+![LogReg_CM](./images/Final_LogReg_CM.png)
 
-## Results
-Our best model achieved an accuracy of 81.9% with our limited dataset, allowing medical professionals to better discover research papers, saving a significant amount of time.
+## Deployment
+For our Mock Deployment, I had a little fun and let a few bitter rivals duke it out in the court of public opinion. For the full story, see the presentation. Below is a sample result from my model, showing Mark Zuckerberg narrowly being less hated than Elon Musk. 
 
-</p>
+I am continuing work on a web app for a more robust deployment, which will allow you, reader, to play around with this tool yourself.
+
+![Muskerberg](./images/Deployment.png)
 
 ## Limitations
 
@@ -55,9 +57,7 @@ This is a bootcamp student project, and not intended to be used in a true busine
 
 ## Conclusions
 
-I had a lot of fun making this project, and would welcome any feedback you may have! Please reach out on [linkedin](https://www.linkedin.com/in/trechsel/) if you'd like to chat.
-
-![](./images/cheer.jpg)
+I had a lot of fun making this and would welcome any feedback you may have! Please reach out on [linkedin](https://www.linkedin.com/in/trechsel/) if you'd like to chat.
 
 ## Repository Structure
 
